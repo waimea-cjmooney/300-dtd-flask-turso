@@ -1,4 +1,4 @@
-#hero h1 {
+#hero {
     font-size: 4rem;
     padding: 0.5em;
     text-align: center;
@@ -10,29 +10,20 @@
 
 #things {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
 #things article {
     width: 15rem;
-    border-radius: 1rem;
+}
 
+#things article p {
+    min-height: 6.5rem;
+}
+
+#things article footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
-
-#things article header {
-    background-color: var(--pico-secondary-background);
-}
-
-#things article header h4 {
-    color: var(--pico-secondary-inverse);
-}
-
-
-#things article p:first-of-type {
-    flex: 1;
-}
-
