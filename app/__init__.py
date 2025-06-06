@@ -46,7 +46,7 @@ def home():
 #-----------------------------------------------------------
 @app.get("/thing/<int:id>")
 def showThing(id):
-    client = connect_db
+    client = connect_db()
     result = client.execute("SELECT * FROM things WHERE id=?", [id])
 
     return render_template("pages/thing.jinja", thing=result.rows[0])
